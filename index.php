@@ -58,7 +58,7 @@
         <?php
         
         
-        echo "<a href = \"https://atec.utdallas.app/~bei180001/final-project/recipes_desc/recipes_desc.php?item={$surpise_recipie}\" class = \"topnav_link\">Surprise Me</a>";
+        echo "<a href = \"recipes_desc.php?item={$surpise_recipie}\" class = \"topnav_link\">Surprise Me</a>";
         
         
         
@@ -79,7 +79,7 @@
       if(isset($_POST['SearchButton'])) {
             session_start();
             $_SESSION["SearchPhrase"] = $_POST["SearchBy"];
-            header("Location: https://atec.utdallas.app/~bei180001/final-project/recipes_list/recipes_list.php");
+            header("Location: recipes_list.php");
         }
       
       ?>
@@ -128,22 +128,22 @@
     <div class = "row indented quiz_row">
 
       <div class = "col">
-        <a href = "https://atec.utdallas.app/~bei180001/final-project/recipes_list/recipes_list.php?quiz=Pescatarian"><i class="fa-solid fa-fish"></i></a>
+        <a href = "recipes_list.php?quiz=Pescatarian"><i class="fa-solid fa-fish"></i></a>
         <p>Pescatarian</p>
       </div>
 
       <div class = "col">
-        <a href = "https://atec.utdallas.app/~bei180001/final-project/recipes_list/recipes_list.php?quiz=Vegetarian"><i class="fa-solid fa-seedling"></i></a>
+        <a href = "recipes_list.php?quiz=Vegetarian"><i class="fa-solid fa-seedling"></i></a>
         <p>Vegetarian</p>
       </div>
 
       <div class = "col">
-        <a href = "https://atec.utdallas.app/~bei180001/final-project/recipes_list/recipes_list.php?quiz=Vegan"><i class="fa-solid fa-carrot"></i></a>
+        <a href = "recipes_list.php?quiz=Vegan"><i class="fa-solid fa-carrot"></i></a>
         <p>Vegan</p>
       </div>
 
       <div class = "col">
-        <a href = "https://atec.utdallas.app/~bei180001/final-project/recipes_list/recipes_list.php?quiz=Gluten"><span class = "fa-stack">
+        <a href = "recipes_list.php?quiz=Gluten"><span class = "fa-stack">
           <i class="fa-solid fa-ban fa-stack-2x"></i>
           <i class="fa-solid fa-wheat-awn fa-stack-1x"></i>
         </span></a>       
@@ -151,7 +151,7 @@
       </div>
 
       <div class = "col">
-        <a href = "https://atec.utdallas.app/~bei180001/final-project/recipes_list/recipes_list.php?quiz=Beef"><span class = "fa-stack">
+        <a href = "recipes_list.php?quiz=Beef"><span class = "fa-stack">
           <i class="fa-solid fa-ban fa-stack-2x"></i>
           <i class="fa-solid fa-cow fa-stack-1x"></i>
         </span></a>
@@ -159,7 +159,7 @@
       </div> 
 
       <div class = "col">
-        <a href = "https://atec.utdallas.app/~bei180001/final-project/recipes_list/recipes_list.php?quiz=Pork"><span class = "fa-stack">
+        <a href = "recipes_list.php?quiz=Pork"><span class = "fa-stack">
           <i class="fa-solid fa-ban fa-stack-2x"></i>
           <i class="fa-solid fa-bacon fa-stack-1x"></i>
         </span></a>
@@ -167,7 +167,7 @@
       </div>
 
       <div class = "col">
-        <a href = "https://atec.utdallas.app/~bei180001/final-project/recipes_list/recipes_list.php?quiz=Eggs"><span class = "fa-stack">
+        <a href = "recipes_list.php?quiz=Eggs"><span class = "fa-stack">
           <i class="fa-solid fa-ban fa-stack-2x"></i>
           <i class="fa-solid fa-egg fa-stack-1x"></i>
         </span></a>
@@ -175,7 +175,7 @@
       </div>
 
       <div class = "col">
-        <a href = "https://atec.utdallas.app/~bei180001/final-project/recipes_list/recipes_list.php?quiz=Dairy"><span class = "fa-stack">
+        <a href = "recipes_list.php?quiz=Dairy"><span class = "fa-stack">
           <i class="fa-solid fa-ban fa-stack-2x"></i>
           <i class="fa-solid fa-cheese fa-stack-1x"></i>
         </span></a>

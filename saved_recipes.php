@@ -6,8 +6,6 @@
   $database = new PDO('sqlite:../recipes_desc/data.sqlite');
 
 
-
-
   $sur = $database->query("
   SELECT Recipie_Name 
   from Recipes");
@@ -24,20 +22,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  $result1 = $database->query("
   SELECT Recipie_Name 
   from 'Liked Recipie'");
@@ -47,7 +31,7 @@
   $div_items = '';
   foreach ($data as $character) {
     $div_items .= " <div class = \"col recipe_col\">
-     <a href = \"https://atec.utdallas.app/~bei180001/final-project/recipes_desc/recipes_desc.php?item={$character['Recipie_Name']}\" class = \"recipe_link\"><img src = \"../images/placeholder.jpg\" class = \"recipe_img\"></a>
+     <a href = \"recipes_desc.php?item={$character['Recipie_Name']}\" class = \"recipe_link\"><img src = \"../images/placeholder.jpg\" class = \"recipe_img\"></a>
      <p>{$character['Recipie_Name']}</p>
     </div>";
     
@@ -55,13 +39,10 @@
 
 
 
-
-
-
     if(isset($_POST['SearchButton'])) {
           
             $_SESSION["SearchPhrase"] = $_POST["SearchBy"];
-            header("Location: https://atec.utdallas.app/~bei180001/final-project/recipes_list/recipes_list.php");
+            header("Location: recipes_list.php");
         }
 
   //html required to display webpage and table
@@ -107,7 +88,7 @@
       </div>
 
       <div class = \"topnav_col margin\">
-        <a href = \"https://atec.utdallas.app/~bei180001/final-project/recipes_desc/recipes_desc.php?item={$surpise_recipie}\" class = \"topnav_link\">Surprise Me</a>
+        <a href = \"recipes_desc.php?item={$surpise_recipie}\" class = \"topnav_link\">Surprise Me</a>
       </div>
 
       <div class = \"topnav_col margin\">

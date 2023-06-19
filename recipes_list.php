@@ -14,7 +14,6 @@
   }
 
 
-
   $SearchCriterion = $_SESSION["SearchPhrase"];
 
    
@@ -43,7 +42,7 @@
   $div_items = '';
   foreach ($data as $character) {
       $div_items .= " <div class = \"col recipe_col\">
-        <a href = \"https://atec.utdallas.app/~bei180001/final-project/recipes_desc/recipes_desc.php?item={$character['Recipie_Name']}\" class = \"recipe_link\"><img src = \"../images/placeholder.jpg\" class = \"recipe_img\"></a>
+        <a href = \"recipes_desc.php?item={$character['Recipie_Name']}\" class = \"recipe_link\"><img src = \"../images/placeholder.jpg\" class = \"recipe_img\"></a>
         <p>{$character['Recipie_Name']}</p>
       </div>";
   }
@@ -69,7 +68,7 @@
   $div_items = '';
   foreach ($data as $character) {
       $div_items .= " <div class = \"col recipe_col\">
-        <a href = \"https://atec.utdallas.app/~bei180001/final-project/recipes_desc/recipes_desc.php?item={$character['Recipie_Name']}\" class = \"recipe_link\"><img src = \"../images/placeholder.jpg\" class = \"recipe_img\"></a>
+        <a href = \"recipes_desc.php?item={$character['Recipie_Name']}\" class = \"recipe_link\"><img src = \"../images/placeholder.jpg\" class = \"recipe_img\"></a>
         <p>{$character['Recipie_Name']}</p>
       </div>";
   }
@@ -91,32 +90,19 @@
   $div_items = '';
   foreach ($data as $character) {
       $div_items .= " <div class = \"col recipe_col\">
-        <a href = \"https://atec.utdallas.app/~bei180001/final-project/recipes_desc/recipes_desc.php?item={$character['Recipie_Name']}\" class = \"recipe_link\"><img src = \"../images/placeholder.jpg\" class = \"recipe_img\"></a>
+        <a href = \"recipes_desc.php?item={$character['Recipie_Name']}\" class = \"recipe_link\"><img src = \"../images/placeholder.jpg\" class = \"recipe_img\"></a>
         <p>{$character['Recipie_Name']}</p>
       </div>";
   }
      
+         
      
-     
-     
-     
-   }
-   
+   } 
     
         
    
    
  }
-
-
-
-
-
-
-
-
-
-
 
   //html required to display webpage and table
   $html = "
@@ -157,11 +143,11 @@
     <div class = \"row topnav_row\">
 
     <div class = \"topnav_col margin\">
-        <a href = \"https://atec.utdallas.app/~bei180001/final-project/recipes_list/recipes_list.php?searchby=\" class = \"topnav_link\">Recipes</a>
+        <a href = \"recipes_list.php?searchby=\" class = \"topnav_link\">Recipes</a>
       </div>
 
       <div class = \"topnav_col margin\">
-        <a href=\"https://atec.utdallas.app/~bei180001/final-project/recipes_desc/recipes_desc.php?item={$surpise_recipie}\" onclick=\"surpriseFunction()\". class = \"topnav_link\">Surprise Me</a>
+        <a href=\"recipes_desc.php?item={$surpise_recipie}\" onclick=\"surpriseFunction()\". class = \"topnav_link\">Surprise Me</a>
       </div>
 
       <div class = \"topnav_col margin\">
@@ -187,22 +173,22 @@
     <div class = \"row indented quiz_row\">
 
       <div class = \"col quiz_col\">
-        <a href = \"https://atec.utdallas.app/~bei180001/final-project/recipes_list/recipes_list.php?quiz=Pescatarian\"><i class=\"fa-solid fa-fish\"></i></a>
+        <a href = \"recipes_list.php?quiz=Pescatarian\"><i class=\"fa-solid fa-fish\"></i></a>
         <p>Pescatarian</p>
       </div>
 
       <div class = \"col quiz_col\">
-        <a  href = \"https://atec.utdallas.app/~bei180001/final-project/recipes_list/recipes_list.php?quiz=Vegetarian\"><i class=\"fa-solid fa-seedling\"></i></a>
+        <a  href = \"recipes_list.php?quiz=Vegetarian\"><i class=\"fa-solid fa-seedling\"></i></a>
         <p>Vegetarian</p>
       </div>
 
       <div class = \"col quiz_col\">
-        <a href = \"https://atec.utdallas.app/~bei180001/final-project/recipes_list/recipes_list.php?quiz=Vegan\"><i class=\"fa-solid fa-carrot\"></i></a>
+        <a href = \"recipes_list.php?quiz=Vegan\"><i class=\"fa-solid fa-carrot\"></i></a>
         <p>Vegan</p>
       </div>
 
       <div class = \"col quiz_col\">
-        <a href = \"https://atec.utdallas.app/~bei180001/final-project/recipes_list/recipes_list.php?quiz=Gluten\"><span class = \"fa-stack\">
+        <a href = \"recipes_list.php?quiz=Gluten\"><span class = \"fa-stack\">
           <i class=\"fa-solid fa-ban fa-stack-2x\"></i>
           <i class=\"fa-solid fa-wheat-awn fa-stack-1x\"></i>
         </span></a>       
@@ -210,7 +196,7 @@
       </div>
 
       <div class = \"col quiz_col\">
-        <a href = \"https://atec.utdallas.app/~bei180001/final-project/recipes_list/recipes_list.php?quiz=Beef\"><span class = \"fa-stack\">
+        <a href = \"recipes_list.php?quiz=Beef\"><span class = \"fa-stack\">
           <i class=\"fa-solid fa-ban fa-stack-2x\"></i>
           <i class=\"fa-solid fa-cow fa-stack-1x\"></i>
         </span></a>
@@ -218,7 +204,7 @@
       </div> 
 
       <div class = \"col quiz_col\">
-        <a href = \"https://atec.utdallas.app/~bei180001/final-project/recipes_list/recipes_list.php?quiz=Pork\"><span class = \"fa-stack\">
+        <a href = \"recipes_list.php?quiz=Pork\"><span class = \"fa-stack\">
           <i class=\"fa-solid fa-ban fa-stack-2x\"></i>
           <i class=\"fa-solid fa-bacon fa-stack-1x\"></i>
         </span></a>
@@ -226,7 +212,7 @@
       </div>
 
       <div class = \"col quiz_col\">
-        <a href = \"https://atec.utdallas.app/~bei180001/final-project/recipes_list/recipes_list.php?quiz=Eggs\"><span class = \"fa-stack\">
+        <a href = \"recipes_list.php?quiz=Eggs\"><span class = \"fa-stack\">
           <i class=\"fa-solid fa-ban fa-stack-2x\"></i>
           <i class=\"fa-solid fa-egg fa-stack-1x\"></i>
         </span></a>
@@ -234,7 +220,7 @@
       </div>
 
       <div class = \"col quiz_col\">
-        <a href = \"https://atec.utdallas.app/~bei180001/final-project/recipes_list/recipes_list.php?quiz=Dairy\"><span class = \"fa-stack\">
+        <a href = \"recipes_list/recipes_list.php?quiz=Dairy\"><span class = \"fa-stack\">
           <i class=\"fa-solid fa-ban fa-stack-2x\"></i>
           <i class=\"fa-solid fa-cheese fa-stack-1x\"></i>
         </span></a>

@@ -25,7 +25,7 @@
     if(isset($_POST['SearchButton'])) {
           
             $_SESSION["SearchPhrase"] = $_POST["SearchBy"];
-            header("Location: https://atec.utdallas.app/~bei180001/final-project/recipes_list/recipes_list.php");
+            header("Location: recipes_list.php");
         }
 
   $html = "
@@ -71,7 +71,7 @@
       </div>
 
       <div class = \"topnav_col margin\">
-        <a href = \"https://atec.utdallas.app/~bei180001/final-project/recipes_desc/recipes_desc.php?item={$surpise_recipie}\" class = \"topnav_link\">Surprise Me</a>
+        <a href = \"recipes_desc.php?item={$surpise_recipie}\" class = \"topnav_link\">Surprise Me</a>
       </div>
 
       <div class = \"topnav_col margin\">
