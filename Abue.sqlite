@@ -1,0 +1,114 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "Recipes" (
+	"Recipie_Name"	TEXT,
+	"Pescatarian"	TEXT,
+	"Vegetarian"	TEXT,
+	"Vegan"	TEXT,
+	"Gluten"	TEXT,
+	"Beef"	TEXT,
+	"Pork"	TEXT,
+	"Eggs"	TEXT,
+	"Dairy"	TEXT
+);
+CREATE TABLE IF NOT EXISTS "Pozole" (
+	"Ingredient"	TEXT DEFAULT 'None',
+	"Amount"	TEXT DEFAULT 'Add to Taste'
+);
+CREATE TABLE IF NOT EXISTS "Salsa Guisada" (
+	"Ingredient"	TEXT DEFAULT 'None',
+	"Amount"	TEXT DEFAULT 'Add to Taste'
+);
+CREATE TABLE IF NOT EXISTS "Empanadas" (
+	"Ingredient"	TEXT DEFAULT 'None',
+	"Amount"	TEXT DEFAULT 'Add to Taste'
+);
+CREATE TABLE IF NOT EXISTS "Tortitas de Camarón y Nopales" (
+	"Ingredient"	TEXT DEFAULT 'None',
+	"Amount"	TEXT DEFAULT 'Add to Tase'
+);
+CREATE TABLE IF NOT EXISTS "Capirotada" (
+	"Ingredient"	TEXT DEFAULT 'None',
+	"Amount"	TEXT DEFAULT 'Add to Tase'
+);
+CREATE TABLE IF NOT EXISTS "Albondigas" (
+	"Ingredient"	TEXT DEFAULT 'None',
+	"Amount"	TEXT DEFAULT 'Add to Tase'
+);
+CREATE TABLE IF NOT EXISTS "Pollo con Papas" (
+	"Ingredient"	TEXT DEFAULT 'None',
+	"Amount"	TEXT DEFAULT 'Add to Tase'
+);
+CREATE TABLE IF NOT EXISTS "Tortillas de Harina" (
+	"Ingredient"	TEXT DEFAULT 'None',
+	"Amount"	TEXT DEFAULT 'Add to Tase'
+);
+CREATE TABLE IF NOT EXISTS "Cheesecake" (
+	"Ingredient"	TEXT DEFAULT 'None',
+	"Amount"	TEXT DEFAULT 'Add to Tase'
+);
+CREATE TABLE IF NOT EXISTS "Shopping List" (
+	"Ingredient"	TEXT DEFAULT 'None',
+	"Amount"	TEXT DEFAULT 'Add to Tase'
+);
+CREATE TABLE IF NOT EXISTS "Liked Recipie" (
+	"Recipie_Name"	TEXT
+);
+INSERT INTO "Recipes" VALUES ('Pozole','No','No','No','No','No','Yes','No','No');
+INSERT INTO "Recipes" VALUES ('Salsa Guisada','Yes','Yes','Yes','No','No','No','No','No');
+INSERT INTO "Recipes" VALUES ('Empanadas','Yes','Yes','No','Yes','No','No','No','Yes');
+INSERT INTO "Recipes" VALUES ('Tortitas de Camarón y Nopales','Yes','No','No','No','No','No','Yes','No');
+INSERT INTO "Recipes" VALUES ('Capirotada','Yes','Yes','No','Yes','No','No','No','Yes');
+INSERT INTO "Recipes" VALUES ('Albondigas','No','No','No','Yes','No','No','Yes','No');
+INSERT INTO "Recipes" VALUES ('Pollo con Papas','No','No','No','No','No','No','No','No');
+INSERT INTO "Recipes" VALUES ('Tortillas de Harina','Yes','Yes','No','No','No','No','No','Yes');
+INSERT INTO "Recipes" VALUES ('Cheesecake','Yes','Yes','No','Yes','No','No','No','Yes');
+INSERT INTO "Pozole" VALUES ('Pork Legs','2 KG');
+INSERT INTO "Pozole" VALUES ('Chile Ancho','5');
+INSERT INTO "Pozole" VALUES ('Chile Cascabel','5');
+INSERT INTO "Pozole" VALUES ('Garlic','3 Cloves');
+INSERT INTO "Pozole" VALUES ('Salt','Add to Taste');
+INSERT INTO "Salsa Guisada" VALUES ('Tomatillos','4');
+INSERT INTO "Salsa Guisada" VALUES ('Onion','1');
+INSERT INTO "Salsa Guisada" VALUES ('Garlic','4 Cloves');
+INSERT INTO "Salsa Guisada" VALUES ('Serrano Pepper','3');
+INSERT INTO "Salsa Guisada" VALUES ('Cilantro','Add to Taste');
+INSERT INTO "Salsa Guisada" VALUES ('Salt','Add to Taste');
+INSERT INTO "Salsa Guisada" VALUES ('Olive','Add to Taste');
+INSERT INTO "Empanadas" VALUES ('Flour','.5 Kg');
+INSERT INTO "Empanadas" VALUES ('Butter','.25 Kg');
+INSERT INTO "Empanadas" VALUES ('Sugar','.25 Cup');
+INSERT INTO "Empanadas" VALUES ('Sweet Potatoes','1 Can');
+INSERT INTO "Empanadas" VALUES ('Cinnamon','Add to Taste');
+INSERT INTO "Tortitas de Camarón y Nopales" VALUES ('Shrimp Poweder','1 Cup');
+INSERT INTO "Tortitas de Camarón y Nopales" VALUES ('Cactus','.5 Kg');
+INSERT INTO "Tortitas de Camarón y Nopales" VALUES ('Eggs','3');
+INSERT INTO "Tortitas de Camarón y Nopales" VALUES ('Tomatoes','2');
+INSERT INTO "Tortitas de Camarón y Nopales" VALUES ('Garlic','2 Cloves');
+INSERT INTO "Tortitas de Camarón y Nopales" VALUES ('Chile Ancho','2');
+INSERT INTO "Tortitas de Camarón y Nopales" VALUES ('Chile Guajillo','6');
+INSERT INTO "Tortitas de Camarón y Nopales" VALUES ('Olive Oil','Add to Taste');
+INSERT INTO "Capirotada" VALUES ('French Bread Loaves','6');
+INSERT INTO "Capirotada" VALUES ('Piloncillos (8oz Cones of Pure Cane Sugar)','2');
+INSERT INTO "Capirotada" VALUES ('Peanuts','Add to Taste');
+INSERT INTO "Capirotada" VALUES ('Raisins','Add to Taste');
+INSERT INTO "Capirotada" VALUES ('Shredded Coconut','Add to Taste');
+INSERT INTO "Capirotada" VALUES ('Butter','.2 Kg');
+INSERT INTO "Capirotada" VALUES ('Queso Panela','Add to Taste');
+INSERT INTO "Albondigas" VALUES ('Ground Meat of Choice','1 Kg');
+INSERT INTO "Albondigas" VALUES ('Salted Crackers','Add to Taste');
+INSERT INTO "Albondigas" VALUES ('Eggs','1');
+INSERT INTO "Albondigas" VALUES ('Garlic','2 Cloves');
+INSERT INTO "Pollo con Papas" VALUES ('Chicken','2 Kg');
+INSERT INTO "Pollo con Papas" VALUES ('Potatoes (Large)','2');
+INSERT INTO "Pollo con Papas" VALUES ('Carrots','4');
+INSERT INTO "Pollo con Papas" VALUES ('Tomato','2');
+INSERT INTO "Pollo con Papas" VALUES ('Onion','1');
+INSERT INTO "Pollo con Papas" VALUES ('Garlic','4 Cloves');
+INSERT INTO "Tortillas de Harina" VALUES ('Flour','1Kg');
+INSERT INTO "Tortillas de Harina" VALUES ('Butter','.25 Kg');
+INSERT INTO "Tortillas de Harina" VALUES ('Baking Powder','1 Teaspoon');
+INSERT INTO "Tortillas de Harina" VALUES ('Salt','Add to Taste');
+INSERT INTO "Cheesecake" VALUES ('Condensed Milk','1 Can');
+INSERT INTO "Cheesecake" VALUES ('Cream Cheese','1 Bar');
+INSERT INTO "Cheesecake" VALUES ('Grahm Cracker Pie Crusts','12');
+COMMIT;

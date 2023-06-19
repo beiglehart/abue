@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFEDCC;
+  color: #FF5719;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-family: 'Mochiy Pop One', Arial, sans-serif;
+  font-size: 3.5em; 
+  margin: 0.5em 0 0 0;
+}
+
+h2 {
+  margin: 0.3em 0 0.3em 0;
+}
+
+h2 , .topnav , .topnav_col {
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: #FF5719; 
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* flexbox for rows */
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  /* background-color: white; */  
+}
+
+.col {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.recipe_col {
+  align-items: flex-start;
+}
+
+/* adds thick side margin to content rows */
+.indented {
+  width: 86%;
+}
+
+/* extra flexbox for indented rows */
+/* allows the flexbox container and content within to be aligned separately*/
+.flexbox_base {
+  display: flex;
+  justify-content: center;
+}
+
+.grid_base {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+#topnav_grid {
+  grid-template-columns: 1fr 1fr 2fr;
+  margin: 0 1em 0 1em;
+}
+
+.topnav_col {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.topnav_row {
+  grid-column: -1;
+  align-items: center;
+}
+
+.logo_row {
+  grid-column: 1;
+  align-items: center;   
+}
+
+.margin {
+  margin: 0 1em 0 1em;
+}
+
+.logo_pic { 
+  max-width :6em;
+  max-height: 6em;
+}
+
+.sun {
+  height : 100%;
+  width : 100%;
+  object-fit: contain;  
+}
+
+.abue_pic {
+  grid-column: 2;
+  
+  max-width :6em;
+  max-height: 6em;
+}
+
+.search {
+  font-family: 'Montserrat', Arial, sans serif;
+  font-size: 0.6em;
+  font-weight: 500;
+
+  text-align: center;
+  text-decoration: none; 
+  padding: 0.3em 0.1em;
+  margin: 0 0.2em 0 0.6em;
+  border: none;
+  border-radius: 0.7em;
+  cursor: pointer;
+
+  background-color: #FF5719;
+  color: #FFEDCC;    
+}
+
+.ingredient_row {
+  justify-content: space-between;
+  margin-top: 2.5em;
+}
+
+.recipe_img {
+  max-width: 24em;
+}
+
+.top_margin {
+  margin-top: 1.5em;
+}
+
+.button_row {
+  align-items: center;
+}
+
+.button_margin {
+  margin: -1em 0 -1em 0;
+}
+
+.button_row i {
+  font-size: 3em;
+}
+
+.button_row p {
+  font-size: 2em;
+  margin-left: 0.5em;
+}
+
+li {
+  font-size: 2em;
+}
+
+.searchbar {
+  font-size: 2em;
+}
